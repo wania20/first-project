@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+<ul style="margin-left: 20px; margin-top: 20px;">
+    <li class="list-group-item list-group-item-primary">This is list 1</li>
+    <li class="list-group-item list-group-item-warning">This is list 2</li>
+    <li class="list-group-item list-group-item-primary">This is list 3</li>
+    <li class="list-group-item list-group-item-warning">This is list 4</li>
+    <li class="list-group-item list-group-item-primary">This is list 5</li>
+    <li class="list-group-item list-group-item-warning">This is list 6</li>
+    <li class="list-group-item list-group-item-primary">This is list 7</li>
+    <li class="list-group-item list-group-item-warning">This is list 8</li>
+    <li class="list-group-item list-group-item-primary">This is list 9</li>
+    <li class="list-group-item list-group-item-warning">This is list 10</li>
+</ul><br>
+
+<button type="button" class="btn btn-outline-dark" id="btn">Hide</button>
+<button type="button" class="btn btn-outline-dark" id="btn1">Show</button>
+
+<script>
+    $(document).ready(function(){
+        $("#btn").click(function(){
+            $("ul li").hide(2000)
+        });
+        $("#btn1").click(function(){
+            $("ul li").show(1000)
+        });
+    })
+</script>
+
+
+</body>
+</html>
